@@ -3,7 +3,6 @@ import sys
 
 
 def main():
-    count = 0
     dt = dict()
     word = input("Enter 10 character word: ")
     for i in word:
@@ -11,8 +10,9 @@ def main():
             dt[i] = 1
         else:
             dt[i] = dt[i] + 1
-    print(dt)
-    return os.EX_OK
+            print(f"dt: {dt}")
+    # print(f"Word should contain 10 letters: {word}")
+            return os.EX_OK
 
 
 if __name__ == "__main__":
