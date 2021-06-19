@@ -10,9 +10,8 @@ def main():
             dt[i] = 1
         else:
             dt[i] = dt[i] + 1
-            print(f"dt: {dt}")
-    # print(f"Word should contain 10 letters: {word}")
-            return os.EX_OK
+    print(f"dt: {dt}")
+    return os.EX_OK
 
 
 if __name__ == "__main__":
