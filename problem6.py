@@ -18,6 +18,7 @@ def main():
     # files yet to be processed
     # unprocessed = None
     print(f"unprocessed files: {processing}")
+    # no need for a 'for' loop; just use set arithmetic
     table = processed.items()
     for keys, values in table:
         if values >= 50:
