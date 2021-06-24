@@ -17,9 +17,10 @@ def main():
     d2 = d1.difference(three)
     d3 = d2.difference(five)
     d4 = d3.difference(seven)
-    print(sorted(d4))
+    print(sorted(d4)) # very good!
     # They are all prime numbers
     # By changing 100 to 1000
+    # prove it!
     return os.EX_OK
 
 
