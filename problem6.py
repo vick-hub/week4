@@ -16,8 +16,12 @@ def main():
     # files currently processing
     processing = random.choices(list(set(files).difference(processed.keys())), k=15)
     # files yet to be processed
+    processed_set = set(processed)
+    processing_set = set(processing)
+    files_set = set(files)
+    unprocessed_set = files_set.difference(processed_set.union(processing_set))
     # unprocessed = None
-    print(f"unprocessed files: {processing}")
+    print(f"unprocessed files: {list(unprocessed_set)}")
     # no need for a 'for' loop; just use set arithmetic
     table = processed.items()
     for keys, values in table:
